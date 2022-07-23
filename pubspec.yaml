@@ -5,6 +5,7 @@ homepage: https://github.com/nyxx-discord/nyxx
 repository: https://github.com/nyxx-discord/nyxx
 documentation: https://nyxx.l7ssha.xyz
 issue_tracker: https://github.com/nyxx-discord/nyxx/issues
+publish_to: none
 
 environment:
   sdk: '>=2.14.0 <3.0.0'
@@ -12,7 +13,10 @@ environment:
 dependencies:
   crypto: ^3.0.1
   logging: ^1.0.1
-  nyxx: ^3.3.0
+  nyxx:
+    git:
+      url: https://github.com/NDSo/nyxx.git
+      ref: next
 
 dev_dependencies:
   test: ^1.19.0
